@@ -1,0 +1,129 @@
+/* =====/////=====/////=====/////=====/////===== */
+@import "variables.css";
+
+/* =====/////=====/////=====/////=====/////===== */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  content: "";
+  opacity: 0.9;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/GamerStore/imgs/background.png");
+}
+
+/* =====/////=====/////=====/////=====/////===== */
+
+.input-style {
+  box-shadow: 0 0 10px rgba(165, 165, 165, 0.2);
+  background-color: #272727;
+  width: 300px;
+  opacity: 1;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  &::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+  }
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* =====/////=====/////=====/////=====/////===== */
+
+.form-container {
+  width: 100%;
+}
+
+.container {
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  background-color: rgb(28, 28, 28);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  opacity: 1;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 8px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  background-size: 300% 300%;
+  animation: colors 15s ease infinite;
+  transition: box-shadow 200ms ease-out;
+  background-image: var(--primary-color);
+}
+
+/* =====/////=====/////=====/////=====/////===== */
+/* Esconde o checkbox original */
+.checkbox-custom {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Estilo para o label que funciona como nosso checkbox personalizado */
+.checkbox-custom-label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 20px;
+}
+
+/* Adiciona um quadrado antes do label para representar o checkbox */
+.checkbox-custom-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+}
+
+/* Quando o checkbox está marcado, altera o background e adiciona um ícone ou cor */
+.checkbox-custom:checked + .checkbox-custom-label::before {
+  background-color: #4caf50;
+  content: "✓";
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+}
