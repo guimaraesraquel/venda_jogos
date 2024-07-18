@@ -1,8 +1,31 @@
+.background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  content: "";
+  opacity: 0.9;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("/GamerStore/imgs/background.png");
+}
+
+.content {
+  z-index: 1;
+  height: 100vh;
+  overflow-y: auto;
+  position: relative;
+}
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: black;
   color: white;
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial, sans-serif;
 }
 
 .header {
@@ -46,7 +69,7 @@ body {
 
 .cart {
   flex: 1;
-  max-width:50%;
+  max-width: 50%;
 }
 
 .item {
@@ -57,7 +80,6 @@ body {
   border-radius: 5px;
   margin-bottom: 40px;
 }
-
 
 .item-left {
   display: flex;
@@ -77,12 +99,12 @@ body {
   background-color: #333;
   color: white;
   padding: 20px;
-  width: 300px; 
+  width: 300px;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   height: 100%;
 }
 

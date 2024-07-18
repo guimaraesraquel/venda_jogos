@@ -8,6 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  overflow: hidden;
   min-width: 100vw;
   min-height: 100vh;
   position: relative;
@@ -24,6 +25,7 @@ body::before {
   position: absolute;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   background-image: url("/GamerStore/imgs/background.png");
 }
 

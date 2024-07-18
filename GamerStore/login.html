@@ -13,57 +13,64 @@
     />
   </head>
   <body>
-    <div class="container flex center">
-      <div class="form flex center">
-        <form class="flex flex-column form-container p-5" action="index.html">
-          <div class="mb-4 w-12">
-            <input
-              required
-              type="text"
-              id="username"
-              name="username"
-              placeholder="username"
-              class="exo-2-font w-12 input-style h-3rem px-3 border-round-lg text-lg"
-            />
+    <div class="background">
+      <div class="content">
+        <div class="container flex center">
+          <div class="form flex center">
+            <form
+              class="flex flex-column form-container p-5"
+              action="index.html"
+            >
+              <div class="mb-4 w-12">
+                <input
+                  required
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="username"
+                  class="exo-2-font w-12 input-style h-3rem px-3 border-round-lg text-lg"
+                />
+              </div>
+              <div class="mb-4 w-12">
+                <input
+                  required
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="password"
+                  class="exo-2-font w-12 input-style h-3rem px-3 border-round-lg text-lg"
+                />
+              </div>
+              <div class="flex flex-row mb-4 justify-content-between">
+                <div class="align-content-center">
+                  <input
+                    type="checkbox"
+                    id="manterConectado"
+                    class="checkbox-custom shadow-8"
+                  />
+                  <label
+                    for="manterConectado"
+                    class="checkbox-custom-label exo-2-font text-sm text-white"
+                    >Manter conectado</label
+                  >
+                </div>
+                <div class="align-content-center">
+                  <a href="#" class="exo-2-font text-sm text-white"
+                    >Esqueceu a senha?</a
+                  >
+                </div>
+              </div>
+              <div class="flex flex-row justify-content-between">
+                <button type="submit" class="exo-2-font w-6 mr-2 text-lg p-2">
+                  Entrar
+                </button>
+                <button type="submit" class="exo-2-font w-6 ml-2 text-lg p-2">
+                  Criar Conta
+                </button>
+              </div>
+            </form>
           </div>
-          <div class="mb-4 w-12">
-            <input
-              required
-              id="password"
-              type="password"
-              name="password"
-              placeholder="password"
-              class="exo-2-font w-12 input-style h-3rem px-3 border-round-lg text-lg"
-            />
-          </div>
-          <div class="flex flex-row mb-4 justify-content-between">
-            <div class="align-content-center">
-              <input
-                type="checkbox"
-                id="manterConectado"
-                class="checkbox-custom shadow-8"
-              />
-              <label
-                for="manterConectado"
-                class="checkbox-custom-label exo-2-font text-sm text-white"
-                >Manter conectado</label
-              >
-            </div>
-            <div class="align-content-center">
-              <a href="#" class="exo-2-font text-sm text-white"
-                >Esqueceu a senha?</a
-              >
-            </div>
-          </div>
-          <div class="flex flex-row justify-content-between">
-            <button type="submit" class="exo-2-font w-6 mr-2 text-lg p-2">
-              Entrar
-            </button>
-            <button type="submit" class="exo-2-font w-6 ml-2 text-lg p-2">
-              Criar Conta
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </body>
