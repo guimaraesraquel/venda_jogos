@@ -9,6 +9,51 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link rel="stylesheet" href="stylesContato.css" />
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+      }
+      .container {
+          width: 100%;
+          max-width: 600px;
+          margin: 50px auto;
+          background-color: #fff;
+          padding: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+          text-align: center;
+          color: #333;
+      }
+      form {
+          display: flex;
+          flex-direction: column;
+      }
+      label {
+          margin: 10px 0 5px;
+          color: #333;
+      }
+      input, textarea {
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+      button {
+          padding: 10px;
+          color: #fff;
+          background-color: #007BFF;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      button:hover {
+          background-color: #0056b3;
+      }
+  </style>
   </head>
   <body>
     <div class="background">
@@ -24,7 +69,27 @@
           >
         </div>
 
-        <!-- Conteúdo da página -->
+        <div class="container">
+          <h1>Fale Conosco</h1>
+          <form action="/submit_form" method="post">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required>
+              
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="telefone">Telefone de Contato:</label>
+              <input type="tel" id="telefone" name="telefone" required>
+              
+              <label for="numero_pedido">Número do Pedido:</label>
+              <input type="text" id="numero_pedido" name="numero_pedido" required>
+              
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+              
+              <button type="submit">Enviar</button>
+          </form>
+      </div>
 
         <div class="footer">
           <p>&copy; 2024 GAMERSTORE. Todos os direitos reservados.</p>
