@@ -83,3 +83,7 @@ body {
 .footer .social i {
   margin-right: 5px;
 }
+
+main {
+  margin-bottom: 5rem !important;
+}
