@@ -20,10 +20,64 @@
           <a href="lista-de-desejos.html" class="active">Lista de Desejos</a>
           <a href="contato.html">Contato</a>
           <a href="login.html" class="login"
-            ><i class="fas fa-user"></i> Login</a
-          >
+            ><i class="fas fa-user"></i> Login</a>
+        </div>		  
+		      <div class="wishlist">
+        <h1>Minha Lista de Desejos GAMERSTORE</h1>
+        <div class="filters">
+            <ul>
+				<p>Fitros:</p>
+                <li><button onclick="sortGames('recent')">Mais Recente</button></li>
+                <li><button onclick="sortGames('older')">Mais Antigo</button></li>
+                <li><button onclick="sortGames('price')">Preço</button></li>
+            </ul>
         </div>
+        <div class="game" data-date="2024-07-15" data-price="19.99">
+            <img src="./imagens/Battlefield 2042.png" alt="Game 1">
+            <div class="game-details">
+                <h2>Battlefield - 2042</h2>
+                <p>Categoria: Action</p>
+            </div>
+            <div class="game-price">$19.99</div>
+        </div>
+        <div class="game" data-date="2023-05-20" data-price="29.99">
+            <img src="./imagens/Final fantasy.png" alt="Game 2">
+            <div class="game-details">
+                <h2>Final Fantasy - A Realm Reborn</h2>
+                <p>Categoria: Adventure</p>
+            </div>
+            <div class="game-price">$29.99</div>
+        </div>
+        <div class="game" data-date="2024-01-10" data-price="39.99">
+            <img src="./imagens/Destiny 2 1.png" alt="Game 3">
+            <div class="game-details">
+                <h2>Destiny - 2</h2>
+                <p>Categoria: FPS</p>
+            </div>
+            <div class="game-price">$39.99</div>
+			<p>""</p>
+			<p> </p>		  
+        </div>
+        <!-- adicionar aqui-->
+    </div>
 
+    <script>
+        function sortGames(criteria) {
+            const games = Array.from(document.querySelectorAll('.game'));
+            let sortedGames;
+
+            if (criteria === 'recent') {
+                sortedGames = games.sort((a, b) => new Date(b.dataset.date) - new Date(a.dataset.date));
+            } else if (criteria === 'older') {
+                sortedGames = games.sort((a, b) => new Date(a.dataset.date) - new Date(b.dataset.date));
+            } else if (criteria === 'price') {
+                sortedGames = games.sort((a, b) => parseFloat(a.dataset.price) - parseFloat(b.dataset.price));
+            }
+
+            const wishlist = document.querySelector('.wishlist');
+            sortedGames.forEach(game => wishlist.appendChild(game));
+        }
+    </script>
         <!-- Conteúdo da página -->
 
         <div class="footer">
@@ -36,8 +90,7 @@
               ><i class="fab fa-instagram"></i> Instagram</a
             >
             <a href="https://www.youtube.com" target="_blank"
-              ><i class="fab fa-youtube"></i> YouTube</a
-            >
+              ><i class="fab fa-youtube"></i> YouTube</a>
           </div>
         </div>
       </div>
