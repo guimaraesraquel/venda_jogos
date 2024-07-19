@@ -28,16 +28,21 @@ body {
   font-family: Arial, sans-serif;
 }
 .header {
-  background-color: #333;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
   overflow: hidden;
+  background-color: #333;
 }
 
 .header a {
   float: left;
+  height: 100%;
   display: block;
   color: white;
+  padding: 0px 15px;
   text-align: center;
-  padding: 14px 16px;
+  align-content: center;
   text-decoration: none;
 }
 
