@@ -57,6 +57,59 @@ body {
 .header a.login {
   float: right;
 }
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+aside {
+  width: 20%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+main {
+  width: 75%;
+  margin-bottom: 5rem !important;
+}
+
+.jogos-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.jogo {
+  width: 45%;
+  box-sizing: border-box;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.jogo img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.seta-direita {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+}
+
+.sucesso {
+  margin-top: 20px;
+}
+
 .footer {
   background-color: #333;
   color: white;
@@ -69,9 +122,11 @@ body {
   align-items: center;
   box-sizing: border-box;
 }
+
 .footer p {
   margin: 0;
 }
+
 .footer a {
   color: white;
   text-decoration: none;
@@ -79,17 +134,20 @@ body {
   display: flex;
   align-items: center;
 }
+
 .footer a:hover {
   color: #ddd;
 }
+
 .footer .social {
   display: flex;
   align-items: center;
 }
+
 .footer .social i {
   margin-right: 5px;
 }
 
-main {
-  margin-bottom: 5rem !important;
+footer {
+  position: relative;
 }
