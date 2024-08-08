@@ -83,16 +83,18 @@ main {
 }
 
 .jogo {
-  width: 45%;
+  width: 22%;  
   box-sizing: border-box;
   background-color: #444;
   padding: 10px;
   border-radius: 8px;
   text-align: center;
+  margin: 0 1%;  
 }
 
 .jogo img {
   width: 100%;
+  height: auto;  
   border-radius: 8px;
 }
 
@@ -100,10 +102,14 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10%;
+  width: 8%;  
   cursor: pointer;
   font-size: 2rem;
   color: white;
+}
+
+.jogos-container .jogo, .jogos-container .seta-direita {
+  flex: 1;
 }
 
 .sucesso {
@@ -151,3 +157,4 @@ main {
 footer {
   position: relative;
 }
+
