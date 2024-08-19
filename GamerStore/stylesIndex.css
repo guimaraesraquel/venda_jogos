@@ -20,6 +20,82 @@
   position: relative;
 }
 
+nav {
+  height: 4vh;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  background-color: #3f3c3c;
+}
+
+img {
+  border: #333, solid, 2px ;
+  border-radius: 5px;
+}
+
+a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 4vw;
+}
+
+h5 {
+  margin-left: 15px;
+}
+
+.titulo {
+  color: #333;
+  text-shadow: 1px 1px 0px #ddd, -1px 1px 0px #ddd, 1px -1px 0px #ddd, -1px -1px 0px #ddd;
+  margin-left: 380px;
+}
+
+#jogoDestaque {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 2vw;
+  margin-bottom: 150px;
+}
+
+#div1JogosMaisVendidos {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-right: 80px;
+  gap: 2vw;
+}
+
+#div2JogosMaisVendidos {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: 20px;
+  margin-bottom: 150px;
+  gap: 2vw;
+}
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  gap: 7vw;
+}
+
+#alinhamentoCategorias img {
+  margin-left: 20px;
+}
+
+#alinhamentoCategorias a {
+  margin-left: 10px;
+}
+
 body {
   margin: 0;
   color: white;
