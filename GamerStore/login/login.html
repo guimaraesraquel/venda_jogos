@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="background">
@@ -30,6 +31,9 @@
                   placeholder="username"
                   class="exo-2-font w-12 input-style h-3rem px-3 border-round-lg text-lg"
                 />
+                <p id="username-helper" class="helper-text">
+                  O nome de usuário deve ter no mínimo 6 caracteres
+                </p>
               </div>
               <div class="mb-4 w-12">
                 <input
@@ -40,6 +44,9 @@
                   placeholder="password"
                   class="exo-2-font w-12 input-style h-3rem px-3 border-round-lg text-lg"
                 />
+                <p id="password-helper" class="helper-text">
+                  A senha deve ter no mínimo 6 caracteres
+                </p>
               </div>
               <div class="flex flex-row mb-4 justify-content-between">
                 <div class="align-content-center">
@@ -61,7 +68,11 @@
                 </div>
               </div>
               <div class="flex flex-row justify-content-between">
-                <button type="submit" class="exo-2-font w-6 mr-2 text-lg p-2">
+                <button
+                  type="submit"
+                  id="btn-entrar"
+                  class="exo-2-font w-6 mr-2 text-lg p-2"
+                >
                   Entrar
                 </button>
                 <button type="submit" class="exo-2-font w-6 ml-2 text-lg p-2">

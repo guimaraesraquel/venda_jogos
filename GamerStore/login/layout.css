@@ -129,3 +129,26 @@ button {
   text-align: center;
   line-height: 20px;
 }
+
+/* =====/////=====/////=====/////=====/////===== */
+.helper-text {
+  display: none;
+  font-size: 0.8rem;
+  color: rgb(255, 0, 0);
+  padding-top: 0.5rem;
+  font-weight: 900;
+}
+
+.visible {
+  display: block;
+}
+
+.input-style-correct {
+  border: 1px solid #4caf50;
+}
+
+.input-style-error {
+  border: 1px solid #af4c4c;
+}
+
+/* =====/////=====/////=====/////=====/////===== */
