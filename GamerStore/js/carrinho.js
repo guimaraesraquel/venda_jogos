@@ -47,8 +47,12 @@ function atualizarCamposPagamento() {
   if (metodoPagamento === 'cartao') {
     camposPagamento.innerHTML = `
       <div class="form-group">
+        <label for="full-name">Nome Completo:</label>
+        <input type="text" id="full-name" name="full-name" required placeholder="Digite o nome completo" pattern="[A-Za-z]+" title="Este campo deve conter apenas letras."/>
+      </div>
+      <div class="form-group">
         <label for="card-number">Número do Cartão:</label>
-        <input type="text" id="card-number" name="card-number" required pattern="\\d{16}" title="O número do cartão deve ter 16 dígitos." />
+        <input type="text" id="card-number" name="card-number" required placeholder="Digite o número do cartão"pattern="\\d{16}" title="O número do cartão deve ter 16 dígitos." />
       </div>
       <div class="form-group">
         <label for="expiry-date">Data de Validade:</label>
@@ -56,7 +60,7 @@ function atualizarCamposPagamento() {
       </div>
       <div class="form-group">
         <label for="cvv">CVV:</label>
-        <input type="text" id="cvv" name="cvv" required pattern="\\d{3}" title="O CVV deve ter 3 dígitos." />
+        <input type="text" id="cvv" name="cvv" required placeholder="Digite o CVV de 3 dígitos" pattern="\\d{3}" title="O CVV deve ter 3 dígitos." />
       </div>`;
   } else if (metodoPagamento === 'boleto') {
     camposPagamento.innerHTML = `<p>Instruções para pagamento via boleto serão enviadas para seu e-mail.</p>`;
