@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAMERSTORE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./stylesIndex.css" />
+    <script src="/GamerStore/js/index.js" defer></script>
+  </head>
+  <body>
+    <div class="background">
+      <div class="content">
+        <div class="header">
+          <div>
+            <a href="/GamerStore/index/index.html" class="logo">GAMERSTORE</a>
+            <a href="/GamerStore/games_page/games_page.html">Jogos</a>
+            <a href="/GamerStore/carrinho/carrinho.html">Carrinho</a>
+            <a href="/GamerStore/lista-de-desejos.html">Lista de Desejos</a>
+            <a href="/GamerStore/contato.html">Contato</a>
+          </div>
+          <div>
+            <a href="/GamerStore/login/login.html" class="login"
+              ><i class="fas fa-user"></i> Login</a
+            >
+          </div>
+        </div>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <a href="">Novidades e tendências</a>
+              </li>
+              <li>
+                <a href="">Categorias</a>
+              </li>
+              <li>
+                <a href="">Jogos em promoção</a>
+              </li>
+            </ul>
+            <input type="text" id="txtBusca" placeholder="Buscar" class="search-btn" />
+          </nav>
+        </div>
+        <br>
+        <main>
+          <h1 class="titulo">Jogos em destaque</h1>
+
+          <section id="jogoDestaque">
+              <button id="prev-button"><img src="./imagens/seta esquerda.png" class="seta" alt="Imagem de botão voltar"></button>
+              <div id="container-imagens">
+                <a href=""><img src="./imagens/Elden ring.png" class="imagem-destaque" alt="Imagem capa do jogo Elden ring" /></a>
+                <a href=""><img src="./imagens/Lies of Pi.png" class="imagem-destaque" alt="Imagem capa do jogo Lies of Pi" /></a>
+                <a href=""><img src="./imagens/FC24.png" class="imagem-destaque" alt="Imagem capa do jogo Fifa 24" /></a>
+              </div>
+              <div id="container-imagens2">
+                <a href=""><img src="./imagens/Red Dead Redemption 2.png" class="imagem-destaque" alt="Imagem capa do jogo Red Dead Redemption" /></a>
+                <a href=""><img src="./imagens/Marvel's Spider-Man_ Miles Morales.png" class="imagem-destaque" alt="Imagem capa do jogo Spider-Man Miles Morales" /></a>
+                <a href=""><img src="./imagens/It Takes Two.png" class="imagem-destaque" alt="Imagem capa do jogo It Takes Two" /></a>
+              </div>
+              <button id="next-button"><img src="./imagens/seta direita.png" class="seta" alt="Imagem de botão avançar"></button>
+          </section>
+
+          <h2 class="titulo">Jogos mais vendidos</h2>
+
+          <section >
+            <div id="div1JogosMaisVendidos">
+            <img src="./imagens/Sekiro.png" alt="Imagem capa do jogo Sekiro" />
+            <img src="./imagens/GTA V.png" alt="Imagem capa do jogo Grand Theft Auto 5" />
+            <img src="./imagens/Cyber punk.png" alt="Imagem capa do jogo Cyberpunk" />
+            <img src="./imagens/Hogwarts Legacy.png" alt="Imagem capa do jogo Hogwarts Legacy" />
+            <a href="" id="link">Ver mais</a>
+            </div>
+            <br>
+            <div id="div2JogosMaisVendidos">
+            <img src="./imagens/God of war ragnarok.png" alt="Imagem capa do jogo God of War Ragnarok" />
+            <img src="./imagens/Destiny 2.png" alt="Imagem capa do jogo Destiny 2" />
+            <img src="./imagens/Forza horizon.png" alt="Imagem capa do jogo Forza Horizon 4" />
+            <img src="./imagens/Battlefield 2042.png" alt="Imagem capa do jogo Battlefield 2042" />
+            </div>
+          </section>
+
+          <section>
+            <h2 class="titulo">Categorias</h2>
+            <div class="categorias">
+              <div id="alinhamentoCategorias">
+                <h5>RPG</h5>
+                <img src="./imagens/Lost ark.png" alt="Imagem capa do jogo Lost Ark" />
+                <img src="./imagens/Genshin Impact.png" alt="Imagem capa do jogo Genshin Impact" />
+                <a href="" id="link">Ver mais</a>
+              </div>
+              <div id="alinhamentoCategorias">
+                <h5>MMO</h5>
+                <img src="./imagens/WOW.png" alt="Imagem capa do jogo World of Warcraft" />
+                <img src="./imagens/Final fantasy.png" alt="Imagem capa do jogo Final Fantasy" />
+                <a href="" id="link">Ver mais</a>
+              </div>
+            </div>
+            <div class="categorias">
+              <div id="alinhamentoCategorias">
+                <h5>FPS</h5>
+                <img src="./imagens/Call of duty.png" alt="Imagem capa do jogo Call of duty" />
+                <img src="./imagens/Destiny 2 1.png" alt="Imagem capa do jogo Destiny 2" />
+                <a href="" id="link">Ver mais</a>
+              </div>
+              <div id="alinhamentoCategorias">
+                <h5>INDIE</h5>
+                <img src="./imagens/Journey.png" alt="Imagem capa do jogo Journey" />
+                <img src="./imagens/LIMBO.png" alt="Imagem capa do jogo Limbo" />
+                <a href="" id="link">Ver mais</a>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <div class="footer">
+          <p>&copy; 2024 GAMERSTORE. Todos os direitos reservados.</p>
+          <div class="social">
+            <a href="https://www.twitch.tv" target="_blank"
+              ><i class="fab fa-twitch"></i> Twitch</a
+            >
+            <a href="https://www.instagram.com" target="_blank"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+            <a href="https://www.youtube.com" target="_blank"
+              ><i class="fab fa-youtube"></i> YouTube</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
