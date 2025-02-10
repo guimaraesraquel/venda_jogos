@@ -78,7 +78,7 @@ GamerStore/
 ---
 
 ## Example Screenshot
-A sample screenshot of the website can be placed here.
+![Screenshot](Capturar.JPG)
 
 ---
 
